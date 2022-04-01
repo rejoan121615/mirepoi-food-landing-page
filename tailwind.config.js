@@ -1,7 +1,12 @@
 module.exports = {
     content: ["index.html"],
+    mode: "jit",
     theme: {
-        extend: {},
+        extend: {
+            gridTemplateColumns: {
+                'welcome': "auto, 50px",
+            }
+        },
     },
     plugins: [],
 };

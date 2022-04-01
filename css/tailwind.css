@@ -2,7 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* fonts  */
-* {
-    font-family: "Nunito", sans-serif;
+@layer base {
+    html {
+        font-family: "Nunito", sans-serif;
+    }
 }
+
+@layer components {
+  .para-lg {
+    @apply text-[24px];
+  }
+}
+
+@layer components {
+  .para {
+    @apply text-[20px] font-light leading-[27px];
+  }
+}
+
+
+@layer components {
+  .display-1 {
+    @apply text-[68px] font-bold leading-[63px];
+    font-style: normal;
+  }
+}
+
+
+@layer components {
+  .container {
+    @apply px-[24px];
+  }
+}
+
